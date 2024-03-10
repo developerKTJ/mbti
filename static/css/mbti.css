@@ -1,0 +1,292 @@
+body {
+  position: relative;
+  transition: .6s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+header > .inner {
+  height: 120px;
+}
+
+header .logo {
+  height: 75px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.logo div {
+  display: block;
+  width: 150px;
+  text-align: justify;
+}
+
+.logo div:before ,
+.logo div::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.logo .sub-title {
+  margin-top: -5px;
+  font-style: italic;
+} 
+
+.logo .main-title {
+  margin-top: -60px;
+  font-size: 40px;
+}
+
+header .menu_wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .menu_wrap ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .menu_wrap ul.menu li {
+  position: relative;
+  width: 180px;
+  display: block;
+  transition: .5s;
+}
+
+header .menu_wrap ul.menu li.block {
+  width: 0;
+  overflow: hidden;
+}
+
+header .menu_wrap ul.menu li a {
+  padding: 10px 15px;
+  display: block;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  white-space:nowrap;
+  transition: .5s;
+}
+
+header .menu_wrap ul.menu li.block a{
+  color: transparent;
+}
+
+/* 모드설정 */
+.toggle-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.toggle-container input{
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+}
+
+.toggle-container .material-symbols-outlined {
+  font-size: 25px;
+  transition: .3s;
+}
+
+.dark {
+  color: #ddd !important;
+}
+
+.light {
+  color: #333 !important;
+}
+
+.toggle-label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+#modeToggle:checked + .toggle-label::before {
+  transform: translateX(25px);
+}
+
+/* 질문 영역 */
+.question {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.content {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  cursor: none;
+}
+
+.qText {
+  width: 600px;
+  height: 275px;
+  position: absolute;
+  word-break: keep-all;
+  line-height: 1.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  margin: auto;
+  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: .4s;
+}
+
+.btn:nth-child(4){
+  margin-right: 0;
+}
+
+.btn.btn--result{
+  margin-left: 110px;
+  margin-top: 10px;
+  width: 210px;
+}
+
+.pointer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  border-top-color: #555;
+  border-bottom-color: #555;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pointer.active {
+  display: block;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0);
+  }to{
+    transform: rotate(1turn);
+  }
+}
+
+/* 질문 리스트 */
+.q-list {
+  width: 200px;
+  height: inherit;
+}
+
+.q-list .q-type {
+
+}
+
+.q-list .q-type li {
+  display: flex;
+  height: 24px;
+  line-height: 24px;
+  padding: 2.5px;
+  margin-bottom: 2.5px;
+  vertical-align: text-top;
+  cursor: pointer;
+}
+
+
+
+.q-list .q-type li :first-child{
+  width: 20px;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
+

@@ -1,0 +1,256 @@
+body {
+  position: relative;
+  transition: .6s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+header > .inner {
+  height: 120px;
+}
+
+header .logo {
+  height: 75px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.logo div {
+  display: block;
+  width: 150px;
+  text-align: justify;
+}
+
+.logo div:before ,
+.logo div::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.logo .sub-title {
+  margin-top: -5px;
+  font-style: italic;
+} 
+
+.logo .main-title {
+  margin-top: -60px;
+  font-size: 40px;
+}
+
+header .menu_wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .menu_wrap ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .menu_wrap ul.menu li {
+  position: relative;
+  width: 180px;
+  display: block;
+  transition: .5s;
+}
+
+header .menu_wrap ul.menu li.block {
+  width: 0;
+  overflow: hidden;
+}
+
+header .menu_wrap ul.menu li a {
+  padding: 10px 15px;
+  display: block;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  white-space:nowrap;
+  transition: .5s;
+}
+
+header .menu_wrap ul.menu li.block a{
+  color: transparent;
+}
+
+/* 모드설정 */
+.toggle-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.toggle-container input{
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+}
+
+.toggle-container .material-symbols-outlined {
+  font-size: 25px;
+  transition: .3s;
+}
+
+.dark {
+  color: #ddd !important;
+}
+
+.light {
+  color: #333 !important;
+}
+
+.toggle-label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+#modeToggle:checked + .toggle-label::before {
+  transform: translateX(25px);
+}
+
+/* 탭메뉴 */
+.type.inner {
+  margin-top: 120px;
+  display: flex;
+}
+
+.type-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.type .main-menu {
+  width: 100%;
+}
+
+.type .title {
+  font-size: 20px;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.type .menu {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.type .menu.active {
+  height: 162px;
+}
+
+.type .menu li {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+}
+
+/* 설명 */
+.type .content-wrap {
+  position: relative;
+  width: 900px;
+  min-height: 600px;
+}
+
+.type .content {
+  display: none;
+}
+
+/* 내용 보이기 */
+.type .content.active {
+  display: block;
+}
+
+.type .content h1,
+.type .content p {
+  position: relative;
+  top: 50px;
+  left: 150px;
+  text-align: justify;
+  line-height: 1.2;
+  width: 600px;
+
+}
+
+.type .content h1 {
+  font-size: 50px;
+}
+
+.type .content p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.type .content hr {
+  position: relative;
+  top: 50px;
+  width: 600px;
+}

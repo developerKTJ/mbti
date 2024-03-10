@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="/css/colorSet.css">
+  <link rel="stylesheet" href="/css/mbti.css">
+  <script src="/js/jquery.js"></script>
+</head>
+
+<body class="bgc_1 fc_1">
+  <!-- 헤더 -->
+  <header class="bgc_2 hbb">
+    <div class="inner">
+      <a href="#" class="logo">
+        <div class="sub-title">5 M i n u t e &nbsp; C u t</div>
+        <div class="main-title">M B T I</div> 
+      </a>
+      <!-- 메뉴 -->
+      <div class="menu_wrap">
+        <ul class="menu">
+          <li>
+            <a class="fc_1" href="#">성격 유형 검사</a>
+          </li>
+          <li>
+            <a class="fc_1 confirm" href="type.html">성격 유형</a>
+          </li>
+          <li class="block">
+            <a class="fc_1" href="result.html">검사 결과</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 모드설정 -->
+    <div class="toggle-container">
+      <input type="checkbox" id="modeToggle">
+      <label for="modeToggle" class="toggle-label bgc_3 tg_bd">
+        <span class="material-symbols-outlined dark">dark_mode</span>
+        <span class="material-symbols-outlined light">light_mode</span>
+      </label>
+    </div>
+    </div>
+  </header>
+  <!-- 검사 영역 -->
+  <div class="question">
+    <div class="content">
+      <h1 class="qText fc_1"></h1>
+      <div class="btn-group">
+        <div class="btn btn--prev block bd_1">prev</div>
+        <div class="btn btn--yes bd_1">yes</div>
+        <div class="btn btn--no bd_1">no</div>
+        <div class="btn btn--next bd_1">next</div>
+        <a href="#" class="btn btn--result block bd_1">Inspection</a>
+      </div>
+      <div class="pointer"></div>
+    </div>
+    <div class="q-list bgc_2">
+      <ul class="q-type">
+        <li class="cur"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <hr>
+      <ul class="q-type">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <hr>
+      <ul class="q-type">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <hr>
+      <ul class="q-type">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="/js/mbti.js"></script>
+</html>

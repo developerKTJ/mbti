@@ -1,0 +1,167 @@
+/* 다크모드 */
+/* 배경색 */
+.bgc_1 {
+  background-color: #333;
+}
+
+.bgc_2 {
+  background-color: #444;
+}
+
+.bgc_3 {
+  background-color: #ddd;
+}
+
+.btn_ck {
+  background-color: #0f0;
+}
+
+/* 폰트색 */
+a {
+  color: #ddd;
+}
+
+.fc_1 {
+  color: #ddd;
+}
+
+.fc_2 {
+  color: #333;
+}
+
+.block_c {
+  color: #353535;
+}
+
+/* 보더색 */
+.bd_1 {
+  border: 2px solid #ddd;
+}
+
+.block_bd {
+  border-color: #444;
+}
+
+.tg_bd {
+  border: 3px solid #ddd;
+}
+
+.hbb {
+  border-bottom: 1px solid #555;
+}
+
+.htb {
+  border-top: 1px solid #555;
+}
+
+.bdt {
+  border-top: 0.5px solid #555;
+}
+
+/* 호버 & 기타 */
+header .menu_wrap ul.menu li a:hover,
+.question .btn:hover,
+.question .btn.check:hover,
+.type .title:hover,
+.type .menu li:hover,
+.question .btn.check {
+  background-color: #ddd;
+  color: #333;
+}
+
+.question .btn.block {
+  background-color: #444;
+  border-color: #444;
+  color: #353535;
+  cursor: none;
+}
+
+.q-list .q-type li.cur {
+  background-color: #333;
+}
+
+.toggle-label::before {
+  background-color: #444;
+}
+
+/* 라이트모드 */
+/* 배경색 */
+body.light {
+  background-color: #ddd;
+}
+
+.light .bgc_1 {
+  background-color: #ddd;
+}
+
+.light .bgc_2 {
+  background-color: #ccc;
+}
+
+.light .bgc_3 {
+  background-color: #333;
+}
+
+/* 폰트색 */
+.light a {
+  color: #333;
+}
+
+.light .fc_1 {
+  color: #333;
+}
+
+.light .fc_2 {
+  color: #ddd;
+}
+
+.light .block_c {
+  color: #c5c5c5;
+}
+
+/* 보더색 */
+.light .bd_1 {
+  border: 2px solid #333;
+}
+
+.light .block_bd {
+  border-color: #ccc;
+}
+
+.light .tg_bd {
+  border: 3px solid #333;
+}
+
+.light .hbb{
+  border-bottom: 1px solid #bbb;
+}
+
+.light .htb {
+  border-top: 1px solid #bbb;
+}
+
+/* 호버 & 기타 */
+.light header .menu_wrap ul.menu li a:hover,
+.light .question .btn:hover,
+.light .question .btn.check:hover,
+.light .type .title:hover,
+.light .type .menu li:hover,
+.light .question .btn.check {
+  background-color: #333;
+  color: #ddd;
+}
+
+.light .question .btn.block {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #c5c5c5;
+  cursor: none;
+}
+
+.light .q-list .q-type li.cur {
+  background-color: #ddd;
+}
+
+.light .toggle-label::before {
+  background-color: #ccc;
+}
